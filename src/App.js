@@ -41,37 +41,13 @@ class App extends Component {
               </tr>
             </thead>
             <tbody>
-         <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td colSpan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-              //{users.map((user) => (
-               // <tr key={user.id}>
-                //  <td>{user.id}</td>
-                //  <td>{user.name}</td>
-             //   </tr>
-             // ))}
+                
+              {users.map((user) => (
+               <tr key={user.id}>
+                 <td>{user.id}</td>
+                 <td>{user.name}</td>
+                </tr>
+             ))}
             </tbody>
           </Table>
         </div>
