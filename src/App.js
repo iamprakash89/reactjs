@@ -41,13 +41,14 @@ class App extends Component {
               </tr>
             </thead>
             <tbody>
-                
+              
               {users.map((user) => (
                <tr key={user.id}>
                  <td>{user.id}</td>
                  <td>{user.name}</td>
                 </tr>
              ))}
+
             </tbody>
           </Table>
         </div>
